@@ -24,24 +24,26 @@
 
 <style>
   :root {
-    --paper: #FBF4E6;
-    --paper-2: #F3E7D2;
-    --ink: #1F2A24;
-    --ink-soft: #3D473F;
-    --accent: #D9502F;
-    --line: rgba(31, 42, 36, 0.16);
+    --paper: #FFFFFF;
+    --paper-2: #FFF8E3;
+    --ink: #3B2D17;
+    --ink-soft: #6E6E6E;
+    --accent: #FFC800;
+    --accent-ink: #8C6A11;
+    --line: rgba(59, 45, 23, 0.16);
     --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --paper: #16201B;
-      --paper-2: #1F2A24;
-      --ink: #F3E7D2;
-      --ink-soft: #C3CFC6;
-      --accent: #E8663F;
-      --line: rgba(243, 231, 210, 0.18);
+      --paper: #1A1408;
+      --paper-2: #241C0D;
+      --ink: #FFF7E4;
+      --ink-soft: #C9BFA8;
+      --accent: #FFC800;
+      --accent-ink: #F2C33D;
+      --line: rgba(255, 247, 228, 0.18);
     }
   }
 
@@ -94,7 +96,7 @@
     font-weight: 600;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--accent-ink);
     margin: 0 0 18px;
   }
 
@@ -137,7 +139,7 @@
   }
 
   .contact a {
-    color: var(--accent);
+    color: var(--accent-ink);
     font-weight: 500;
     text-underline-offset: 3px;
   }
@@ -167,8 +169,8 @@
     <span class="logo">
       <span aria-hidden="true">
         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1.5" y="1.5" width="31" height="31" rx="6" transform="rotate(-4 17 17)" fill="#D9502F"/>
-          <path d="M10 22.5L14.5 10.5H17.8L22.3 22.5H19.4L18.5 19.9H13.7L12.8 22.5H10ZM14.5 17.6H17.7L16.1 13L14.5 17.6Z" fill="#FBF4E6"/>
+          <rect x="1.5" y="1.5" width="31" height="31" rx="6" transform="rotate(-4 17 17)" fill="#FFC800"/>
+          <path d="M10 22.5L14.5 10.5H17.8L22.3 22.5H19.4L18.5 19.9H13.7L12.8 22.5H10ZM14.5 17.6H17.7L16.1 13L14.5 17.6Z" fill="#3B2D17"/>
         </svg>
       </span>
       <span class="logo-word">AdmitTalk</span>
