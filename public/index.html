@@ -3,203 +3,274 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AdmitTalk — Coming soon</title>
-<meta name="description" content="AdmitTalk is a community forum where students, parents, and counselors talk through essays, decisions, financial aid, and waitlists — together. Launching soon.">
-<meta name="robots" content="noindex">
+<title>AdmitTalk — Talk it through with people who get it</title>
+<meta name="description" content="AdmitTalk is a community forum where students, parents, and counselors talk through essays, decisions, financial aid, chances, and waitlists — together.">
 <link rel="canonical" href="https://admittalk.com/">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://admittalk.com/">
-<meta property="og:title" content="AdmitTalk — Coming soon">
+<meta property="og:title" content="AdmitTalk — Talk it through with people who get it">
 <meta property="og:description" content="A community forum where students, parents, and counselors talk through essays, decisions, financial aid, and waitlists — together.">
 <meta property="og:site_name" content="AdmitTalk">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AdmitTalk — Coming soon">
+<meta name="twitter:title" content="AdmitTalk — Talk it through with people who get it">
 <meta name="twitter:description" content="A community forum where students, parents, and counselors talk through essays, decisions, financial aid, and waitlists — together.">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-<style>
-  :root {
-    --paper: #FFFFFF;
-    --paper-2: #FFF8E3;
-    --ink: #3B2D17;
-    --ink-soft: #6E6E6E;
-    --accent: #FFC800;
-    --accent-ink: #8C6A11;
-    --line: rgba(59, 45, 23, 0.16);
-    --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --paper: #1A1408;
-      --paper-2: #241C0D;
-      --ink: #FFF7E4;
-      --ink-soft: #C9BFA8;
-      --accent: #FFC800;
-      --accent-ink: #F2C33D;
-      --line: rgba(255, 247, 228, 0.18);
-    }
-  }
-
-  * { box-sizing: border-box; }
-
-  html, body { height: 100%; }
-
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: var(--font-body);
-    -webkit-font-smoothing: antialiased;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  .wrap {
-    width: 100%;
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-
-  main {
-    flex: 1 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 64px 0;
-  }
-
-  .logo {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 40px;
-  }
-
-  .logo-word {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1.4rem;
-    letter-spacing: -0.01em;
-  }
-
-  .eyebrow {
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent-ink);
-    margin: 0 0 18px;
-  }
-
-  h1 {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: clamp(2.4rem, 7vw, 3.6rem);
-    line-height: 1.08;
-    letter-spacing: -0.02em;
-    margin: 0 0 24px;
-  }
-
-  .underline-wrap {
-    position: relative;
-    display: inline-block;
-    font-style: italic;
-  }
-
-  .squiggle {
-    position: absolute;
-    left: 0;
-    bottom: -0.18em;
-    width: 100%;
-    height: 0.22em;
-    overflow: visible;
-  }
-
-  .lede {
-    font-size: 1.08rem;
-    line-height: 1.65;
-    color: var(--ink-soft);
-    margin: 0 0 32px;
-    max-width: 34em;
-  }
-
-  .contact {
-    font-size: 0.95rem;
-    color: var(--ink-soft);
-    margin: 0;
-  }
-
-  .contact a {
-    color: var(--accent-ink);
-    font-weight: 500;
-    text-underline-offset: 3px;
-  }
-
-  .contact a:hover { text-decoration: none; }
-
-  footer {
-    flex-shrink: 0;
-    border-top: 1px solid var(--line);
-    padding: 22px 0;
-    font-size: 0.85rem;
-    color: var(--ink-soft);
-  }
-
-  footer p { margin: 0; }
-
-  @media (max-width: 520px) {
-    main { padding: 48px 0; }
-    .logo { margin-bottom: 32px; }
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<main>
-  <div class="wrap">
-    <span class="logo">
-      <span aria-hidden="true">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top" aria-label="AdmitTalk home">
+      <span class="logo-mark" aria-hidden="true">
         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="1.5" y="1.5" width="31" height="31" rx="6" transform="rotate(-4 17 17)" fill="#FFC800"/>
           <path d="M10 22.5L14.5 10.5H17.8L22.3 22.5H19.4L18.5 19.9H13.7L12.8 22.5H10ZM14.5 17.6H17.7L16.1 13L14.5 17.6Z" fill="#3B2D17"/>
         </svg>
       </span>
       <span class="logo-word">AdmitTalk</span>
-    </span>
+    </a>
 
-    <p class="eyebrow">Coming soon</p>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#what">What it's for</a>
+      <a href="#topics">Topics</a>
+      <a href="#trust">Why it works</a>
+    </nav>
 
-    <h1>We're <span class="underline-wrap">building it<svg class="squiggle" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M2 15 C 40 3, 70 3, 100 12 S 160 21, 200 10 S 260 3, 298 12" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round" style="color: var(--accent)"/></svg></span> now.</h1>
+    <a class="btn btn-primary btn-header" href="https://forum.admittalk.com">Join the forum</a>
 
-    <p class="lede">
-      AdmitTalk will be a community forum where students, parents, and counselors talk
-      through essays, decisions, financial aid, and waitlists — together.
-    </p>
-
-    <p class="contact">
-      Questions in the meantime? <a href="mailto:hello@admittalk.com">hello@admittalk.com</a>
-    </p>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+
+  <div id="mobile-nav" class="mobile-nav" hidden>
+    <a href="#what">What it's for</a>
+    <a href="#topics">Topics</a>
+    <a href="#trust">Why it works</a>
+    <a class="btn btn-primary" href="https://forum.admittalk.com">Join the forum</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section id="top" class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">A community forum, not another algorithm</p>
+        <h1>
+          College admissions is confusing.
+          <span class="underline-wrap">Talking about it<svg class="squiggle" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M2 15 C 40 3, 70 3, 100 12 S 160 21, 200 10 S 260 3, 298 12" style="color: var(--accent)" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span>
+          doesn't have to be.
+        </h1>
+        <p class="hero-sub">
+          AdmitTalk is where students, parents, and counselors compare notes on essays, decisions, financial aid,
+          chances, and waitlists — in threads you can actually search, not a group chat that scrolls away.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary btn-large" href="https://forum.admittalk.com">Join the forum <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#what">See what's inside</a>
+        </div>
+        <p class="hero-note">Free to join · No cap on how many boards you can read</p>
+      </div>
+
+      <div class="hero-board" aria-hidden="true">
+        <div class="card card-a">
+          <p class="card-kicker">Essays</p>
+          <p class="card-line">"Cut your first paragraph. Start with the moment you're actually describing."</p>
+        </div>
+        <div class="card card-b">
+          <p class="card-kicker">Financial Aid</p>
+          <p class="card-line">"Appealing an aid offer isn't rude — here's the email that worked for us."</p>
+        </div>
+        <div class="card card-c">
+          <p class="card-kicker">Waitlists</p>
+          <p class="card-line">"What a letter of continued interest should — and shouldn't — say."</p>
+        </div>
+        <span class="pin pin-a"></span>
+        <span class="pin pin-b"></span>
+        <span class="pin pin-c"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="what" class="section what">
+    <div class="wrap">
+      <h2><span class="tag">01</span> What the community is for</h2>
+      <p class="section-lede">
+        Admissions advice online is either paid, anonymous, or years out of date. AdmitTalk is the place to ask
+        the specific, slightly embarrassing question — and get an answer from someone who's actually been
+        through it this cycle.
+      </p>
+
+      <div class="grid grid-4">
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 6h20M4 14h20M4 22h12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Get specific answers</h3>
+          <p>Post your actual essay draft, your actual numbers, your actual dilemma — not a hypothetical.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="9" cy="9" r="5" stroke="currentColor" stroke-width="2.4"/><circle cx="19" cy="19" r="5" stroke="currentColor" stroke-width="2.4"/><path d="M12.5 12.5l3 3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Compare notes</h3>
+          <p>See how similar students approached the same school, the same scholarship, the same tough call.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4l2.9 6.6 7.1.7-5.4 4.8 1.6 7-6.2-3.7-6.2 3.7 1.6-7-5.4-4.8 7.1-.7L14 4z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Not just students</h3>
+          <p>Parents and counselors post in the same threads as students — no scheduling, no fee, no waitlist of their own.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 23.5S5.6 18.2 5.6 11.9C5.6 8.4 8.3 6 11.3 6c1.6 0 3.1.8 4 2.1.9-1.3 2.4-2.1 4-2.1 3 0 5.7 2.4 5.7 5.9 0 6.3-8.4 11.6-8.4 11.6z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Support each other</h3>
+          <p>Deferrals, rejections, and the weird guilt of getting in when a friend didn't — it's all fair game here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="topics" class="section topics">
+    <div class="wrap">
+      <h2><span class="tag">02</span> Browse by topic</h2>
+      <p class="section-lede">Every board is public to read. Join to post, save threads, and get replies.</p>
+
+      <ul class="topic-grid">
+        <li class="topic-card topic-1">
+          <span class="topic-num">01</span>
+          <h3>General</h3>
+          <p>Everything that doesn&#39;t fit another board yet — including the questions you aren&#39;t sure how to ask.</p>
+        </li>
+        <li class="topic-card topic-2">
+          <span class="topic-num">02</span>
+          <h3>Ivy League</h3>
+          <p>Harvard, Yale, Princeton, and the other six.</p>
+        </li>
+        <li class="topic-card topic-3">
+          <span class="topic-num">03</span>
+          <h3>University of California</h3>
+          <p>The UC application, campus lists, and in-state vs out-of-state.</p>
+        </li>
+        <li class="topic-card topic-4">
+          <span class="topic-num">04</span>
+          <h3>Top 25 Universities</h3>
+          <p>Stanford, MIT, Duke, and the rest of the top of the list.</p>
+        </li>
+        <li class="topic-card topic-5">
+          <span class="topic-num">05</span>
+          <h3>Engineering &amp; CS</h3>
+          <p>Impacted majors, portfolios, and getting into engineering programs.</p>
+        </li>
+        <li class="topic-card topic-6">
+          <span class="topic-num">06</span>
+          <h3>Liberal Arts Colleges</h3>
+          <p>Williams, Amherst, Pomona, and small-college life.</p>
+        </li>
+        <li class="topic-card topic-7">
+          <span class="topic-num">07</span>
+          <h3>International Applicants</h3>
+          <p>Applying from outside the US — visas, funding, and testing.</p>
+        </li>
+        <li class="topic-card topic-8">
+          <span class="topic-num">08</span>
+          <h3>Financial Aid</h3>
+          <p>FAFSA, CSS Profile, merit scholarships, and appeal letters.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="trust" class="section trust">
+    <div class="wrap trust-inner">
+      <div class="trust-copy">
+        <h2><span class="tag">03</span> Why people stick around</h2>
+        <p class="section-lede">
+          Admissions forums have a reputation for either going stale or turning toxic. AdmitTalk is built,
+          and moderated, to avoid both.
+        </p>
+
+        <dl class="trust-list">
+          <div class="trust-item">
+            <dt>One handle, one history</dt>
+            <dd>You post under a handle you keep, so advice arrives with a track record behind it instead of vanishing behind a new throwaway name every thread.</dd>
+          </div>
+          <div class="trust-item">
+            <dt>Moderated by people</dt>
+            <dd>Threads are read by people, not handed to an automated filter. Reports get looked at, and pile-ons get shut down.</dd>
+          </div>
+          <div class="trust-item">
+            <dt>No chancing gimmicks</dt>
+            <dd>No stat-only "chance me" bots and no paid placement for consultants. Advice has to show its reasoning.</dd>
+          </div>
+          <div class="trust-item">
+            <dt>Nothing sold to advertisers</dt>
+            <dd>AdmitTalk doesn't sell your activity to test-prep companies or consultants. Ever.</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="trust-visual" aria-hidden="true">
+        <div class="stamp">
+          <svg viewBox="0 0 160 160" width="180" height="180">
+            <circle cx="80" cy="80" r="76" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="3 5"/>
+            <circle cx="80" cy="80" r="60" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <text x="80" y="70" text-anchor="middle" font-family="Fraunces, serif" font-size="15" fill="currentColor">MODERATED</text>
+            <text x="80" y="92" text-anchor="middle" font-family="Fraunces, serif" font-size="15" fill="currentColor">BY HUMANS</text>
+            <text x="80" y="112" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" letter-spacing="2" fill="currentColor">SINCE DAY ONE</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="wrap cta-inner">
+      <h2>Your next question is one thread away.</h2>
+      <p>Bring your essay draft, your award letter, or just your nerves. Someone here has been exactly where you are.</p>
+      <a class="btn btn-primary btn-large" href="https://forum.admittalk.com">Join the forum <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
 </main>
 
-<footer>
-  <div class="wrap">
-    <p>© <span id="year">2026</span> AdmitTalk</p>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="logo-word footer-logo">AdmitTalk</span>
+      <p>A community forum for admissions season — and every season after it.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <div class="footer-col">
+        <h4>Community</h4>
+        <a href="#topics">Topics</a>
+        <a href="#trust">Why it works</a>
+        <a href="https://forum.admittalk.com">Join the forum</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <a href="mailto:hello@admittalk.com">hello@admittalk.com</a>
+      </div>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year">2026</span> AdmitTalk. Built by students, parents, and counselors — not a committee.</p>
   </div>
 </footer>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>

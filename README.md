@@ -4,37 +4,39 @@ Static site for AdmitTalk, a community forum for college admissions
 discussion (students, parents, and counselors). No build step, no
 framework — plain HTML and CSS.
 
-## Current state: coming-soon placeholder
+## Current state: full landing page
 
-`public/index.html` is a self-contained placeholder page (inline CSS, no JS
-dependency beyond a one-line year stamp). It is up while the forum at
-`forum.admittalk.com` is still being built, so visitors are not sent to
-an empty forum.
+`public/index.html` is the full landing page — hero, topic boards, trust
+section, and CTAs — styled by `public/styles.css` with `public/script.js`
+for the mobile nav. It is indexable.
 
-It is set to `noindex`. Remove that meta tag when you want it indexed.
-
-## Restoring the full landing page
-
-The complete landing page — hero, topic boards, trust section, CTAs — is
-preserved at the `landing-page-v1` tag:
+The coming-soon placeholder it replaced is in history at commit `13d1850`
+if it is ever needed again:
 
 ```bash
-git show landing-page-v1:index.html > public/index.html
+git show 13d1850:index.html > public/index.html
 ```
 
-`public/styles.css` and `public/script.js` are still in the repo and are what that page
-needs; the placeholder does not use them.
+Note: the `landing-page-v1` tag this README used to reference never existed.
+The pre-placeholder landing page is at commit `4dde969`.
 
-Before putting it back, resolve the open items:
+## Open items
 
-- The six topic boards must exist on the forum and have real threads
-- Flarum's default welcome text must be replaced
-- Privacy policy and terms need to exist and be linked from the footer
-  (the audience includes minors)
-- The "real names" identity claim and the moderation claims need to be
-  true or softened
-- The footer "Guidelines" link points at an on-page marketing section,
-  not actual guidelines
+The topic boards on the page were matched to the boards that actually exist
+on `forum.admittalk.com`. If you add or rename a board there, update the
+`.topic-grid` list in `public/index.html` to match.
+
+Still outstanding:
+
+- **Privacy policy and terms do not exist and are not linked from the
+  footer.** The audience includes minors, so this is the significant one —
+  it also backs the "nothing sold to advertisers" claim in the trust
+  section.
+- The trust section previously claimed accounts were "tied to a real
+  identity behind the scenes" and that every board had moderators plus
+  volunteer counselors. Both were removed or softened because they could
+  not be verified. If they become true, the wording can be restored from
+  commit `4dde969`.
 
 ## Files
 

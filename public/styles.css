@@ -480,13 +480,14 @@ button { font: inherit; }
 .topic-2 { transform: rotate(0.6deg); }
 .topic-4 { transform: rotate(-0.6deg); }
 .topic-6 { transform: rotate(0.4deg); }
+.topic-8 { transform: rotate(-0.4deg); }
 
 @media (max-width: 900px) {
   .topic-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 560px) {
   .topic-grid { grid-template-columns: 1fr; }
-  .topic-card, .topic-2, .topic-4, .topic-6 { transform: none; }
+  .topic-card, .topic-2, .topic-4, .topic-6, .topic-8 { transform: none; }
 }
 
 /* ============================================
